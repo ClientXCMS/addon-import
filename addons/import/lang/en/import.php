@@ -1,0 +1,64 @@
+<?php
+
+/*
+ * This file is part of the CLIENTXCMS project.
+ * This file is the property of the CLIENTXCMS association. Any unauthorized use, reproduction, or download is prohibited.
+ * For more information, please consult our support: clientxcms.com/client/support.
+ * Year: 2024
+ */
+return [
+    'title' => 'Import',
+    'description' => 'Import a database with the existing old version or from other vendors into NextGen',
+    'importwhmcs' => 'Import via WHMCS will be available soon',
+    'importclientxcms' => 'Importing from the old version of ClientXCMS',
+    'db' => [
+        'host' => 'Host',
+        'port' => 'Port',
+        'database' => 'Database',
+        'username' => 'Username',
+        'password' => 'Password',
+    ],
+    'v1' => [
+        'importables' => [
+            'products' => 'Product',
+            'groups' => 'Groups',
+            'servers' => 'Servers',
+            'services' => 'Services',
+            'invoices' => 'Invoices',
+            'clients' => 'Customers',
+            'pterodactyl' => 'Pterodactyl Configuration',
+            'proxmox' => 'Proxmox Configuration',
+            'oses' => 'Proxmox Operating Systems',
+            'templates' => 'Templates Proxmox',
+            'plesk' => 'Configuration Plesk',
+            'socialauth' => 'SocialAuth Link',
+            'support' => 'Tickets & Support Departments',
+            'wisp' => 'Wisp Configuration',
+            'proxmox_ipam' => 'Configuration IPAM Proxmox',
+        ],
+        'fromv1' => 'Importing from the old version of ClientXCMS',
+        'title' => 'ClientXCMS v1',
+        'description' => 'Importing from the old version of ClientXCMS',
+    ],
+    'whmcs' => [
+        'importables' => [
+            'products' => 'Product',
+            'groups' => 'Groups',
+            'servers' => 'Servers',
+            'services' => 'Services',
+            'clients' => 'Customers',
+            'pterodactyl' => 'Pterodactyl Configuration',
+            'wisp' => 'Wisp configuration',
+            'invoices' => 'Factures',
+        ],
+        'fromwhmcs' => 'Import from WHMCS',
+        'title' => 'WHMCS',
+        'key' => 'Encoder key',
+        'keyhelp' => 'The encoder key is used to decrypt the data from WHMCS. It is available in the WHMCS configuration.php file',
+        'description' => 'Import from WHMCS',
+    ],
+    'downloadreport' => 'Download the report',
+    'import' => 'Import',
+    'delay' => 'Please wait, it may take some time for the page to load.',
+    'truncate' => 'Empty tables before import (highly recommended)',
+];
